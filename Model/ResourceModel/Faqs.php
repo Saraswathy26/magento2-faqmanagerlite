@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\Model\ResourceModel;
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 use Magento\Framework\Model\ResourceModel\Db\Context;

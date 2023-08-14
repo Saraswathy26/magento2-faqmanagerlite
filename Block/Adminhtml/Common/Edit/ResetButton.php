@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\Block\Adminhtml\Common\Edit;
 use Magento\Framework\App\RequestInterface;
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;

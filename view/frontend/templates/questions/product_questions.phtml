@@ -14,9 +14,8 @@ $faqs = $ViewModel->getAllProductFaqs();
             "active": [0],
             "collapsible": true,
             "openedState": "active",
-            "multipleCollapsible": false,
-            "icons": {"header": "plus ui-accordion-header-icon ui-icon ui-icon-triangle-1-e", "activeHeader": "minus ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"}
-        }}'>
+            "multipleCollapsible": false
+            }}'>
     <?php foreach ($faqs as $faq): ?>
         <div class="collapsibleTab" data-role="collapsible">
             <div data-role="trigger">

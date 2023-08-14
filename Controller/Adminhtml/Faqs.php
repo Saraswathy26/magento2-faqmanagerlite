@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\Controller\Adminhtml;
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;

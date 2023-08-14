@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\ViewModel\Faqs;
 use Mageesh\FaqManagerLite\Model\ResourceModel\Faqs\CollectionFactory;
 use Magento\Cms\Model\Template\FilterProvider;

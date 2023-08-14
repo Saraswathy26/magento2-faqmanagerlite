@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\Model\Faqs;
 use Mageesh\FaqManagerLite\Model\ResourceModel\Faqs\Collection;
 use Mageesh\FaqManagerLite\Model\ResourceModel\Faqs\CollectionFactory;

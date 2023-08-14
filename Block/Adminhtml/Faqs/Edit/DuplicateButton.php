@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\Block\Adminhtml\Faqs\Edit;
 use Mageesh\FaqManagerLite\Block\Adminhtml\Common\Edit\DuplicateButton as AbstractDuplicateButton;
 use Mageesh\FaqManagerLite\Model\FaqsFactory;

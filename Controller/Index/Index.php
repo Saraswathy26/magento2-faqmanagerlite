@@ -1,4 +1,9 @@
 <?php
+/**
+ * @author Saraswathy Shanmugam <saraswathy.shanmugam26@gmail.com>
+ * @package Mageesh_FaqManagerLite
+ */
+
 namespace Mageesh\FaqManagerLite\Controller\Index;
 use Magento\Framework\App\ActionInterface;
 use Magento\Framework\App\ResponseInterface;
