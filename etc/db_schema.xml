@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="faqmanagerlite" resource="default" engine="innodb" comment="Faq Manager Lite">
+        <column xsi:type="int" name="entity_id" unsigned="true" nullable="false" identity="true" comment=" FAQ ID" />
+        <column xsi:type="int" name="product_id" unsigned="true" nullable="false" comment="Product ID" />
+        <column xsi:type="int" name="customer_id" unsigned="true" nullable="false" comment="Customer ID" />
+        <column xsi:type="varchar" name="questions" nullable="false" comment="Questions" />
+        <column xsi:type="text" name="answers" nullable="false" comment="Answers" />
+        <column xsi:type="boolean" name="status" nullable="false" comment="Status" />
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Created At"/>
+        <column xsi:type="timestamp" name="updated_at" on_update="true" nullable="false" default="CURRENT_TIMESTAMP"
+                comment="Updated At"/>
+        <column xsi:type="varchar" name="related_to" nullable="false" comment="Related To" />
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id" />
+        </constraint>
+    </table>
+</schema>

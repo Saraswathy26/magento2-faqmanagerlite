@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mageesh_FaqManagerLite::mageesh_faqmanagerlite"
+             title="Faqs Manager Lite" translate="title"
+             module="Magento_Backend" sortOrder="50" parent="Magento_Backend::marketing"
+             resource="Magento_Backend::mageesh_faqmanagerlite"/>
+        <add id="Mageesh_FaqManagerLite::mageesh_faqmanagerlite_faqs" title="Faqs"
+             module="Mageesh_FaqManagerLite" sortOrder="15"
+             parent="Mageesh_FaqManagerLite::mageesh_faqmanagerlite"
+             action="faqmanagerlite/faqs/index" resource="Mageesh_FaqManagerLite::mageesh_faqmanagerlite"/>
+    </menu>
+</config>

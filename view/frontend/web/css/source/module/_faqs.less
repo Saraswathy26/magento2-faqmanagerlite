@@ -1,0 +1,53 @@
+.collapsibleContainer {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0.8rem;
+}
+.collapsibleTab {
+    background: #eee;
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: bold;
+    margin: 0.8rem;
+    &:first-child {
+        border-bottom: 1px solid #ddd;
+    }
+    &:nth-last-child(2) {
+        border-top: 1px solid #ddd;
+    }
+}
+.collapsibleTab.active::after {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    line-height: 20px;
+    color: inherit;
+    content: '\e622';
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: normal;
+    overflow: hidden;
+    speak: none;
+    text-align: center;
+}
+
+.collapsibleContent {
+    padding: 1rem 2rem;
+    margin: 1rem;
+}
+
+.faqtitle {
+    text-align: center;
+    font-size: 1.8rem;
+    background: dimgrey;
+    padding: 0.5em;
+    color: #f1f1f1;
+}
+.faqsubtitle{
+    font-size: 2rem;
+    text-align: center;
+}
+.faq_question {
+    font-size: 1.4rem;
+}

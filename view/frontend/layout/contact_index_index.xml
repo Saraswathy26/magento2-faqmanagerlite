@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+        <referenceContainer name="content">
+            <block name="questions.tab" as="questions"
+                   after="product.info.details"
+                   template="Mageesh_FaqManagerLite::questions/contact_faq.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">
+                        Mageesh\FaqManagerLite\ViewModel\Faqs\Questions
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+</page>

@@ -1,0 +1,16 @@
+{
+    "name": "mageesh/module-faqmanagerlite",
+    "description": "Magento 2 Faq Manager Lite",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "OpenSSL",
+
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mageesh\\FaqManagerLite\\": ""
+        }
+    }
+}

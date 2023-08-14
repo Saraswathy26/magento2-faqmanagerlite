@@ -1,0 +1,39 @@
+<?php
+/**
+ * @var Magento\Framework\View\Element\Template $block
+ */
+/**
+ * @var Mageesh\FaqManagerLite\ViewModel\Faqs\Questions $ViewModel
+ */
+$ViewModel = $block->getData('view_model');
+$pFaqs = $ViewModel->getAllProductFaqs();
+$gFaqs = $ViewModel->getAllGeneralFaqs();
+$allFaqs = [
+    'Product FAQs' => $pFaqs,
+    'General FAQs' => $gFaqs
+]
+?>
+<h3 class="faqtitle"><?= $ViewModel->getHeading() ?></h3>
+<?php foreach ($allFaqs as $title => $onefaq): ?>
+    <?php if ($onefaq): ?>
+        <h4 class="faqsubtitle"><?= $title ?></h4>
+        <div class="collapsibleContainer" id="accordion" data-mage-init='{
+        "accordion":{
+            "active": [0],
+            "collapsible": true,
+            "openedState": "active",
+            "multipleCollapsible": false
+        }}'>
+            <?php foreach ($onefaq as $faq): ?>
+                <div class="collapsibleTab" data-role="collapsible">
+                    <div data-role="trigger">
+                        <span class="faq_question"><?=$faq->getData('questions');?></span>
+                    </div>
+                </div>
+                <div class="collapsibleContent" data-role="content">
+                    <?= /** @var \Magento\Framework\Escaper $escaper */
+                    nl2br($faq->getData('answers'));?></div>
+            <?php endforeach; ?>
+        </div>
+    <?php endif; ?>
+<?php endforeach; ?>
